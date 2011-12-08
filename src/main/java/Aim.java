@@ -1,4 +1,4 @@
-package de.schoon.mybot;
+
 
 import java.util.HashMap;
 import java.util.Map;

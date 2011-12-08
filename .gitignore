@@ -2,7 +2,7 @@
 .project
 .settings/
 MyBot.jar
-game_logs/
+*.zip
 target/
 tools/
 tutorial.cmd

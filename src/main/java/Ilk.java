@@ -1,4 +1,4 @@
-package de.schoon.mybot;
+
 /**
  * Represents type of tile on the game map.
  */

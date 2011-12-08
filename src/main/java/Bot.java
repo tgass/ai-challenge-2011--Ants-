@@ -1,4 +1,4 @@
-package de.schoon.mybot;
+
 /**
  * Provides basic game state handling.
  */

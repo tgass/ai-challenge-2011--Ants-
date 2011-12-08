@@ -1,4 +1,4 @@
-package de.schoon.mybot;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;

@@ -1,4 +1,4 @@
-package de.schoon.mybot;
+
 /**
  * Represents an order to be issued.
  */

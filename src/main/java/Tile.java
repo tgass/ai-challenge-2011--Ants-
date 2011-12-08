@@ -1,7 +1,3 @@
-package de.schoon.mybot;
-
-
-import com.google.common.base.Objects;
 
 /**
  * Represents a tile of the game map.
@@ -11,8 +7,6 @@ public class Tile implements Comparable<Tile> {
 	private final int row;
     
     private final int col;
-    
-    private int id;
     
     /**
      * Creates new {@link Tile} object.
@@ -52,7 +46,7 @@ public class Tile implements Comparable<Tile> {
      */
     @Override
     public int hashCode() {
-        return Objects.hashCode(row, col);
+        return row * Ants.MAX_MAP_SIZE + col;
     }
     
     /**

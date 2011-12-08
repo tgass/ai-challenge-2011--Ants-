@@ -1,4 +1,4 @@
-package de.schoon.mybot;
+
 import java.io.IOException;
 
 /**
@@ -16,8 +16,12 @@ public abstract class AbstractSystemInputReader {
         int c;
         while ((c = System.in.read()) >= 0) {
             if (c == '\r' || c == '\n') {
-                processLine(line.toString().toLowerCase().trim());
-                line.setLength(0);
+            	if(line.toString().startsWith("[YourKit")) {
+            		//
+            	} else {
+            		processLine(line.toString().toLowerCase().trim());
+            		line.setLength(0);
+            	}
             } else {
                 line = line.append((char)c);
             }
