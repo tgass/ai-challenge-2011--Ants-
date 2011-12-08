@@ -1,0 +1,8 @@
+.classpath
+.project
+.settings/
+MyBot.jar
+game_logs/
+target/
+tools/
+tutorial.cmd
