@@ -1,0 +1,34 @@
+AI Challenge: Ants (Fall 2011) http://aichallenge.org
+-----------------------------------------------------
+
+My profile: http://aichallenge.org/profile.php?user=13264
+
+
+Classes of interest:
+
+Field
+- Represents the field on which all the action happens.
+  Provides information for every location on the field, ie.
+  whether a location contains food, an enemy ant or isn't 
+  accessible.
+- It is instantiated once per round.
+ 
+Env
+- Represents the environment of an ant. Stores distances
+  to every food location, friendly/ enemy ant, friendly/ 
+  enemy hill, ...
+- Instantiated with Breadth-first Search on the Field, so it
+  provides fast access to the shortest paths to all places
+  of interest within range.
+- All locations within range are evaluated in regard of the
+  influence of enemy ants. The result of that evaluation is
+  whether the ant would "live", "fight" or "die" at the
+  location in question. 
+
+Algorithms used:
+- Breadth-first Search on graph structure to instantiate the Ant
+  Environment.
+- A*-Algorithm to determine default moves for each ant. A* is used
+  to maximize the sum distance to the two nearest friendly ants. This
+  leads to an even distrubution of all ants over the field.
+  (The default move is used if no food or enemy ants are within range.)
